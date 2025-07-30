@@ -303,6 +303,9 @@
   justify-items: flex-end;
 }
 @media (max-width: 768px) {
+  .app {
+    overflow-x: hidden;
+  }
   .hero {
     flex-direction: column;
     margin-right: unset;
