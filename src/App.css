@@ -1,4 +1,5 @@
 .app {
+  margin-bottom: 100px;
 }
 .part1 {
   background-color: #e6fbff;
@@ -8,11 +9,14 @@
 .header {
   display: flex;
   justify-content: space-between;
-  /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05); */
 }
 .headerPart1 {
   display: flex;
   gap: 50px;
+}
+.headerPart2 {
+  display: flex;
+  gap: 10px;
 }
 .logoText {
   font-weight: bold;
@@ -48,8 +52,10 @@
   margin-left: 50px;
   margin-top: 100px;
 }
+.heroLeft {
+}
 .heroLeft h1 {
-  font-size: 48px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.3;
@@ -95,7 +101,7 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 30px;
-  width: 350px;
+  width: 20vw;
 }
 .heroRight h2 {
   font-size: 14px;
@@ -157,31 +163,37 @@
   margin-top: -100px;
   margin-bottom: 100px;
 }
-.features{
+.features {
   display: flex;
   gap: 100px;
 }
-.futureText{
+.futureText {
   color: rgb(19, 121, 137);
   font-size: 12px;
 }
-.part2 .rightContent{
+.futurePaymentCintent {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+.part2 .rightContent {
   color: #555;
   align-items: center;
   display: flex;
 }
-.part2 .leftText{
+.part2 .leftText {
   font-size: 32px;
   font-weight: bold;
   line-height: 45px;
 }
-.features{
+.features {
   margin-top: 50px;
 }
-.feature{
+.feature {
   color: #555;
 }
-.part3{
+.part3 {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -191,29 +203,185 @@
   align-items: center;
   justify-content: center;
 }
-.part3 .card1{
-background-color: rgb(241, 239, 239);
-width: 30vw;
-height: 200px;
-border-radius: 10px;
-padding: 50px;
-display: flex;
-flex-direction: column;
-gap: 50px;
+.part3 .card1 {
+  background-color: rgb(241, 239, 239);
+  width: 30vw;
+  height: 200px;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-.part3 .card2{
+.part3 .card1 .content {
+  font-weight: bold;
+  width: 40vw;
+  font-size: 20px;
+}
+.part3 .card2 {
   width: 30vw;
   height: 200px;
   background-color: rgb(241, 239, 239);
   border-radius: 10px;
   padding: 50px;
 }
-.part3 .card3{
-  width: 60vw;
-  height: 200px;
-  background-color: rgb(241, 239, 239);;
+.part3 .card2 .content {
+  font-weight: bold;
+  width: 40vw;
+  font-size: 20px;
+}
+.part3 .card3 {
+  width: 65vw;
+  /* height: 200px; */
+  background-color: rgb(241, 239, 239);
   border-radius: 10px;
-  padding: 50px;
+  padding: 50px 50px 0px 50px;
   display: flex;
-  
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.card3 img {
+  height: 310px;
+  width: 500px;
+  border-radius: 10px 10px 0 0;
+}
+.footerSection {
+  margin-top: 400px;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* align-items: center; */
+  justify-content: center;
+  justify-items: center;
+  /* background-color: pink; */
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e2dddd;
+}
+.footerSection .copyRightText {
+  color: #0a2540;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer .subHeader {
+  font-size: 24px;
+  font-weight: 500;
+  color: #0a2540;
+  margin-bottom: 20px;
+}
+.footer .link {
+  font-size: 18px;
+  font-weight: 300;
+  color: #555;
+}
+.linkSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .logoText {
+  flex: 1;
+}
+.footer .footerPart1 {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.footer .followUs {
+  flex: 1;
+  justify-items: flex-end;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    margin-right: unset;
+    margin-left: unset;
+    margin-top: unset;
+  }
+  .part2 {
+    margin-top: 200px;
+  }
+  .futurePaymentCintent {
+    margin-right: 0;
+    gap: 10px;
+  }
+  .futurePaymentCintent,
+  .headerPart1,
+  .navSection,
+  .features,
+  .card3,
+  .header,
+  .headerPart2,
+  .hero,
+  .footer,
+  .footer .footerPart1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footerPart1 {
+    gap: 10px;
+  }
+  .headerPart2 {
+    margin-top: 20px;
+  }
+  .loginButton,
+  .signinButton {
+    width: 40vw;
+  }
+  .card3 img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 0 0;
+    margin: 30px 0;
+  }
+  .part3 .card2,
+  .part3 .card1,
+  .part3 .card3 {
+    display: flex;
+    width: 65vw;
+  }
+  .heroLeft {
+    padding: 0 10vw;
+    margin-top: 50px;
+  }
+  .heroRight {
+    width: 70vw;
+    margin-top: 100px;
+  }
+  .part1 {
+    padding: 10px;
+    padding-bottom: 100px;
+    height: unset;
+  }
+  .features {
+    gap: 10px;
+    margin-top: 100px;
+  }
+  .part3 .card2 .content,
+  .part3 .card1 .content {
+    width: unset;
+  }
+  .footer .logoText {
+    margin-bottom: 90px;
+  }
+  .footer .link,
+  .footer .subHeader {
+    align-self: center;
+  }
+  .footer .followUs {
+    margin-top: 100px;
+    justify-items: center;
+  }
 }
