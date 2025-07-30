@@ -1,3 +1,4 @@
+import graph from "./graph.jpeg"
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -114,12 +115,16 @@ function App() {
         </section>
       </div>
       <div className="part3">
-        <div className="card1"></div>
-        <div className="card2"></div>
-        <div className="card3"></div>
+        <div className="card1"><div style={{ fontSize: '52px', color: '#0a2540', fontWeight: 'bold' }}>3k+</div><div style={{ fontWeight: 'bold', width: '260px', fontSize: '20px' }}>Bussiness already running on Finpay</div></div>
+        <div className="card2"><div style={{ fontWeight: 'bold', width: '300px', fontSize: '20px' }}>Instant Withdraw your funds at any time</div></div>
+        <div className="card3">
+          <div><h1>No asset volatility</h1><h3>Generate returns on your cash reverse without making any investments.</h3></div>
+          <div style={{ flex: 1 }}><img src={graph} alt="graph" width="500px" height="200px" /></div>
+        </div>
       </div>
     </div>
   );
 }
 
 export default App;
+
